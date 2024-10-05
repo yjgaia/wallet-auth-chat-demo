@@ -1,6 +1,6 @@
 import { Router } from "@common-module/app";
-import Home from "./Home.js";
+import AppView from "./AppView.js";
 
 export default async function init() {
-  Router.route("", Home);
+  Router.add("/", AppView);
 }
